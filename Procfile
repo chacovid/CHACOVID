@@ -1,0 +1,1 @@
+web: gunicorn Chacovid.wsgi --log-file -
