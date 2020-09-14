@@ -25,7 +25,7 @@ SECRET_KEY = '8lf2e=#w38u*l$iwjm*7#@mqr$*u&c0rdjih$ej)47+mcxn!dr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["guarded-chamber-24625.herokuapp.com"]
 
 
 # Application definition
