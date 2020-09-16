@@ -4,40 +4,41 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link  href={% static 'inicio.css' %}>              
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css'%}">  
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jumbo.css'%}">  
+    <link rel="stylesheet" type="text/css" href="{% static 'css/body.css'%}"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fin.css'%}">    
+    <link rel="stylesheet" type="text/css" href="{% static 'font-awesome-4.7.0/css/font-awesome.css'%}">           
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <!-- menu -->
-    <nav id="menu" class="navbar navbar-expand-lg navbar-light rounded ">
-        <a class="navbar-brand" href="/">CHACOVID19</a>
+    <nav id="inicio" class="navbar navbar-expand-lg navbar-light rounded ">
+        <a class=" navbar-brand text-white  " style="font-size: 2rem;" href="/">CHACOVID</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Fases</a>
+                    <a class="nav-link text-white" href="/home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="{{ url_for('permisos') }}">Permisos</a>
+                    <a class="nav-link text-white" href="{% url 'permisos' %}">Permisos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('cuidados') }}">Cuidados</a>
+                    <a class="nav-link text-white" href="{% url 'cuidados' %}">Cuidados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('asistencia') }}">Asistencia</a>
+                    <a class="nav-link text-white" href="{% url 'asistencia' %}">Asistencia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('mapa') }}">Mapa</a>
+                    <a class="nav-link text-white" href="{% url 'mapa' %}">Mapa</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class=" mr-sm-1 input-sm" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-light my-2 my-sm-0 btn-sm" type="submit">Buscar</button>
-              </form>
+            
         </div>
     </nav>
 
@@ -49,18 +50,20 @@
 
 </body>
 
+
+
 <article>
-    <div align="center" class="mt-4" >
+    <div id="fin" align="center" class="mt-4">
   
         <!-- <p>"Suficiente!" dijo el pequeño hombre, mientras se levantaba de su desbaratada silla...</p> -->
     
         <footer>
             <hr class="my-4">
-            
-            <p>Copyright &copy; 1991-2020 Informatorio Chaco, todos los derechos reservados.</p>
+            <div class="text-white">
+            <p> Copyright &copy; 2014-2020 Informatorio Chaco, todos los derechos reservados.</p>
 
             <hr class="my-4">
-    
+            </div>
         </footer>
     </div>
 </article>
