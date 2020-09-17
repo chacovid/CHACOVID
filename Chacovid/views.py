@@ -11,8 +11,8 @@ def permisos(request):
 def cuidados(request):
      return render(request, 'cuidados.html')
 
-def asistencia(request):
-     return render(request, 'asistencia.html')
+def fases(request):
+     return render(request, 'fases.html')
 
 def mapa(request):
      return render(request, 'mapa.html')

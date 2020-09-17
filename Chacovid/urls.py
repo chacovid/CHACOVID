@@ -19,10 +19,11 @@ from Chacovid import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home),
     path('home/', views.home),
     path('permisos/', views.permisos, name='permisos'),
     path('cuidados/', views.cuidados, name='cuidados'),
-    path('asistencia/', views.asistencia, name='asistencia'),
+    path('fases/', views.fases, name='fases'),
     path('mapa/', views.mapa, name='mapa'), 
     
 
