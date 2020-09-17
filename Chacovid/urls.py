@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Chacovid import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home),
+    path('home/', views.home),
+    path('permisos/', views.permisos, name='permisos'),
+    path('cuidados/', views.cuidados, name='cuidados'),
+    path('fases/', views.fases, name='fases'),
+    path('mapa/', views.mapa, name='mapa'), 
+    
+
 ]
