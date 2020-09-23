@@ -2,34 +2,70 @@
 
 <!-- video de youtube-->
 {% block content %}
-<div class="alert alert-warning" role="alert">
-   
-    <h1> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Page building</h1>
-</div>
 
-<div id="jumbo" class="text-white container-fluid ">
-    <div class="row">
-        
-        
-        <div class="col-md-6 mb-3">
-        
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img(117).jpg" class="img-fluid z-depth-1 "
-                alt="Responsive image">
-        
-        </div>    
-       
-        <!-- IMAGENES ILUSTRATVAS NOMAS, HASTA QUE TEO ME PASE LAS POSTAS -->
-      
-        <!-- Grid column -->
-        <div class="col-md-6 mb-3">
-      
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img(129).jpg" class="img-fluid z-depth-1"
-                alt="Responsive image">
-      
-        </div>
-        <!-- Grid column -->
-      
-    </div>
+<div id="fondo" class="jumbotron mt-3 ">
+    <table class="table table-responsive table-bordered  fondo">
+        <thead class="text-white" style="background-color: rgb(190, 57, 82);">
+            <tr>
+                <th></th>
+                <th>Fase 1</th>
+                <th>Fase 2</th>
+                <th>Fase 3</th>
+                <th>Fase 4</th>
+                <th>Fase 5</th>
+            </tr>
+        </thead>
+        <tbody style="background-color: rgb(250, 239, 241);">
+            <tr>
+                <td></td>
+                <td>Aislamiento estricto</td>
+                <td>Aislamiento administrativo</td>
+                <td>Segmentacion geotrafica</td>
+                <td>Reapertura progresiva</td>
+                <td>Nueva normalidad</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-check-circle-o fa-2x fa-fw logos" aria-hidden="true"></i> Autorizados</td>
+                <td>Solo servicios esenciales</td>
+                <td>Nuevas autorizaciones</td>
+                <td>Excepciones provinciales</td>
+                <td>Excepciones provinciales</td>
+                <td>Con habitos de higiene y cuidado sostenido</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-times fa-2x fa-fw logos" aria-hidden="true"></i> Prohibiciones</td>
+                <td>Todo el resto</td>
+                <td>Prohibiciones nacionales</td>
+                <td>Prohibiciones nacionales</td>
+                <td>Prohibiciones nacionales</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-child fa-2x fa-fw logos" aria-hidden="true"></i> Movilidad de poblacion</td>
+                <td>Hasta el 10%</td>
+                <td>Hasta el 25%</td>
+                <td>Hasta el 50%</td>
+                <td>Hasta el 75%</td>
+                <td>Hasta el 75%</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-clock-o fa-2x fa-fw logos" aria-hidden="true"></i> Tiempo de duplicacion de casos</td>
+                <td>Menos de 5 dias</td>
+                <td>5 a 15 dias</td>
+                <td>15 a 25 dias</td>
+                <td>Mas de 25 dias</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-map-marker fa-2x fa-fw logos" aria-hidden="true"></i> Geografico</td>
+                <td>Homogeneo</td>
+                <td>Excepciones Nacionales</td>
+                <td>Segmentacion por criterio epidemiologico</td>
+                <td>Restricciones locales</td>
+                <td>Homogeneo</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 {% endblock %}
