@@ -1,0 +1,32 @@
+body {
+    background-color: whitesmoke;
+}
+
+.mapdiv {
+    width: 50%;
+    margin: auto;
+}
+
+.mapdiv path {
+    fill: #e8e9d6;
+    stroke: #000000;
+    stroke-width: 0.8px;
+    transition: fill 0.3s;
+}
+
+.mapdiv path:hover {
+    fill: #ffffff;
+}
+
+.mapdiv path:focus {
+    outline: none !important;
+    fill: #dadada;
+}
+
+.casosbody {
+    background-color: rgb(230 225 209);
+}
+
+.casosheader {
+    background-color: rgb(57, 150, 136);
+}
