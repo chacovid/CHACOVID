@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from Aplicacion.models import *
+from ChacovidApp.models import *
 
 def home(request):
     return render(request, "home.html")
@@ -16,7 +16,5 @@ def fases(request):
     return render(request, 'fases.html')
 
 def mapa(request):
-    datos = datos.objects.all()
-    context  = {"object_list": datos }
-    return render(request, 'mapa.html', context)
-
+    context = {"lista_datos": Datos.objects.all() }
+    return render(request,"mapa.html",context)
